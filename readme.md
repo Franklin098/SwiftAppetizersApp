@@ -1,5 +1,14 @@
 # Appetizers App
 
+iOS app build using SwiftUI and the Model View ViewModel (MVVM) architecture.
+
+- Handle API Requests (Success, Error, Loading states)
+- Animations
+- Dark Mode
+- Tab Navigation
+- Navigation Links
+- Image Caching
+
 ## Technical Notes
 
 In previous versions the App Delegate was the entry point to the program.

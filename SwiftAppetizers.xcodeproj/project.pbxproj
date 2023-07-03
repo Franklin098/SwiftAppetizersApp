@@ -22,6 +22,7 @@
 		F91E8D462A4D40900013AD67 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E8D452A4D40900013AD67 /* Alert.swift */; };
 		F91E8D4A2A4D45800013AD67 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E8D492A4D45800013AD67 /* LoadingView.swift */; };
 		F91E8D4D2A4D46440013AD67 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E8D4C2A4D46440013AD67 /* Color+Ext.swift */; };
+		F9C79ACE2A5283DD006AF4D3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C79ACD2A5283DD006AF4D3 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F91E8D452A4D40900013AD67 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F91E8D492A4D45800013AD67 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F91E8D4C2A4D46440013AD67 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		F9C79ACD2A5283DD006AF4D3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		F9074E642A4965C000B9D06B /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				F9C79ACD2A5283DD006AF4D3 /* RemoteImage.swift */,
 				F9074E652A4965D400B9D06B /* AppetizerListViewModel.swift */,
 			);
 			path = "View Models";
@@ -243,6 +246,7 @@
 				F9074E612A495CA000B9D06B /* NetworkManager.swift in Sources */,
 				F91E8D4D2A4D46440013AD67 /* Color+Ext.swift in Sources */,
 				F9074E5E2A495A2400B9D06B /* AppetizerCell.swift in Sources */,
+				F9C79ACE2A5283DD006AF4D3 /* RemoteImage.swift in Sources */,
 				F9074E532A48FC3100B9D06B /* AppetizerListView.swift in Sources */,
 				F91E8D462A4D40900013AD67 /* Alert.swift in Sources */,
 				F9074E582A48FC5100B9D06B /* OrderView.swift in Sources */,
