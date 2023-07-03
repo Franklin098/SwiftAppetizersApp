@@ -30,7 +30,7 @@ struct AppetizerTabView: View {
                 }
             
         }
-        .accentColor(Color("brandPrimary"))
+        .accentColor(Color.brandPrimary) // our Color+Ext
     }
 }
 
