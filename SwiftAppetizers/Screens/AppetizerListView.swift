@@ -10,6 +10,7 @@ import SwiftUI
 struct AppetizerListView: View {
     
     @StateObject var viewModel = AppetizerListViewModel()
+
     
     var body: some View {
         
@@ -20,17 +21,29 @@ struct AppetizerListView: View {
                 List(self.viewModel.appetizers , rowContent: { appetizer in
                     
                     AppetizerCell(appetizer: appetizer)
+                        .onTapGesture {
+                            viewModel.isShowingDetail = true
+                            viewModel.selectedAppetizer = appetizer
+                        }
                     
                 })
                 .navigationTitle("🍉 Appetizers")
+                .disabled(viewModel.isShowingDetail)
                 
             }.onAppear{
                 viewModel.getAppetizers()
+            }.blur(radius: viewModel.isShowingDetail ? 20 : 0)
+                
+            
+            if let appetizer = viewModel.selectedAppetizer, viewModel.isShowingDetail {
+                AppetizerDetailView(appetizer: appetizer, isShowingDetail: $viewModel.isShowingDetail)
             }
             
             if viewModel.isLoading {
                 LoadingView()
             }
+            
+            
             
         }.alert(item: $viewModel.alertItem) { alertItem in
             

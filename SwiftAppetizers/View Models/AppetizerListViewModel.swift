@@ -16,6 +16,10 @@ final class AppetizerListViewModel : ObservableObject {
     
     @Published public var isLoading: Bool = false
     
+    @Published public var isShowingDetail = false
+    
+    @Published public var selectedAppetizer: Appetizer?
+    
     
     func getAppetizers(){
         
