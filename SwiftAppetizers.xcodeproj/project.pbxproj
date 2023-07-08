@@ -25,6 +25,7 @@
 		F920B6562A53963C00DD0C7C /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F920B6552A53963C00DD0C7C /* AppetizerDetailView.swift */; };
 		F920B6592A53C52C00DD0C7C /* AppetizerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F920B6582A53C52C00DD0C7C /* AppetizerButton.swift */; };
 		F920B65B2A53C60B00DD0C7C /* DismissCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F920B65A2A53C60B00DD0C7C /* DismissCircleButton.swift */; };
+		F920F35F2A58FD3E0097AECC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F920F35E2A58FD3E0097AECC /* User.swift */; };
 		F95FD6192A56292900302729 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FD6182A56292900302729 /* AccountViewModel.swift */; };
 		F95FD61B2A562A6100302729 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FD61A2A562A6100302729 /* String+Ext.swift */; };
 		F9C79ACE2A5283DD006AF4D3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C79ACD2A5283DD006AF4D3 /* RemoteImage.swift */; };
@@ -50,6 +51,7 @@
 		F920B6552A53963C00DD0C7C /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		F920B6582A53C52C00DD0C7C /* AppetizerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerButton.swift; sourceTree = "<group>"; };
 		F920B65A2A53C60B00DD0C7C /* DismissCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissCircleButton.swift; sourceTree = "<group>"; };
+		F920F35E2A58FD3E0097AECC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F95FD6182A56292900302729 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F95FD61A2A562A6100302729 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F9C79ACD2A5283DD006AF4D3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				F91E8D452A4D40900013AD67 /* Alert.swift */,
 				F9074E5A2A4954AE00B9D06B /* Appetizer.swift */,
 				F9074E622A495FDA00B9D06B /* APIError.swift */,
+				F920F35E2A58FD3E0097AECC /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				F9074E662A4965D400B9D06B /* AppetizerListViewModel.swift in Sources */,
 				F9074E452A48FB7B00B9D06B /* SwiftAppetizersApp.swift in Sources */,
 				F91E8D4A2A4D45800013AD67 /* LoadingView.swift in Sources */,
+				F920F35F2A58FD3E0097AECC /* User.swift in Sources */,
 				F9074E612A495CA000B9D06B /* NetworkManager.swift in Sources */,
 				F91E8D4D2A4D46440013AD67 /* Color+Ext.swift in Sources */,
 				F9074E5E2A495A2400B9D06B /* AppetizerCell.swift in Sources */,

@@ -9,23 +9,22 @@ import SwiftUI
 
 final class AccountViewModel: ObservableObject {
     
-    @Published var firstName = ""
-    @Published var lastName = ""
-    @Published var email = ""
-    @Published var birthDate = Date()
-    @Published var extraNapkins = false
-    @Published var frequentRefills = false
+
+    @Published var user = User()
     
     @Published var alertItem: AlertItem?
     
+    // UserDefaults is a key-value pair storage, automatically looks for a value and populate the variable
+    @AppStorage("user") private var userData: Data?
+    
     var isValidForm: Bool {
         
-        guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+        guard !user.firstName.isEmpty && !user.lastName.isEmpty && !user.email.isEmpty else {
             alertItem = AlertContext.invalidForm
             return false
         }
         
-        guard email.isValidEmail else {
+        guard user.email.isValidEmail else {
             alertItem = AlertContext.invalidEmail
             return false
         }
@@ -40,6 +39,26 @@ final class AccountViewModel: ObservableObject {
         }
         
         // actually persist the changes
+        do {
+            let data = try JSONEncoder().encode(self.user)
+            userData = data
+            alertItem = AlertContext.userSaveSuccess
+        } catch {
+            alertItem = AlertContext.invalidUserData
+        }
+    }
+    
+    func retrieveUser () {
+        guard let userData = userData else {
+            return
+        }
+        
+        do {
+            let user = try JSONDecoder().decode(User.self, from: userData)
+            self.user = user
+        } catch {
+            alertItem = AlertContext.invalidUserData
+        }
     }
     
 }
