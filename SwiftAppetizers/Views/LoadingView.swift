@@ -33,7 +33,7 @@ struct LoadingView: View {
         ZStack {
             
             Color(.systemBackground)
-                .edgesIgnoringSafeArea(.all) // fill the entire screen
+                .ignoresSafeArea()// fill the entire screen
             
             ActivityIndicator()
         }

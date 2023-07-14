@@ -8,6 +8,16 @@ iOS app build using SwiftUI and the Model View ViewModel (MVVM) architecture.
 - Tab Navigation
 - Navigation Links
 - Image Caching
+- Form Validation
+- Alerts
+- Environment State
+- App Storage
+
+## Preview
+
+![Appetizers App](./images/appetizers_video1.gif)
+
+![Appetizers App](./images/appetizers_video2.gif)
 
 ## Technical Notes
 
