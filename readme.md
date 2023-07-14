@@ -2,6 +2,8 @@
 
 iOS app build using SwiftUI and the Model View ViewModel (MVVM) architecture.
 
+Technologies and Features:
+
 - Handle API Requests (Success, Error, Loading states)
 - Animations
 - Dark Mode
